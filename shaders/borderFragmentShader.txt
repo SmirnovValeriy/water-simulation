@@ -1,0 +1,20 @@
+#version 330 core
+
+in vec3 normal;
+in vec3 FragPos;
+in vec2 TexCoord;
+
+uniform vec3 lightPos;
+uniform vec4 lightColor;
+uniform float baseColorPart;
+
+out vec4 color;
+
+uniform sampler2D borderTexture;
+
+void main() {
+    vec3 lightDir = normalize(lightPos - FragPos);
+    float diff = max(dot(normal, lightDir), 0.0);
+    color = texture(borderTexture, TexCoord) * (baseColorPart + diff) * lightColor;
+    color.a = 1.0;
+}

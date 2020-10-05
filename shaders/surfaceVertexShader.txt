@@ -1,0 +1,18 @@
+#version 330 core
+
+layout (location = 0) in vec2 position1;
+
+uniform mat4 view;
+uniform mat4 projection;
+
+uniform sampler2D currentWater;
+
+out VS_OUT {
+    vec3 fragPos;
+} vs_out;
+
+void main () { 
+  float h = texture(currentWater, position1).r;
+  gl_Position = projection * view * vec4(position1.x, h, position1.y, 1.0f);
+  vs_out.fragPos = vec3(position1.x, h, position1.y);
+}
