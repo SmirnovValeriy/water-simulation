@@ -49,7 +49,7 @@ For more information about libraries used: [CMakeLists.txt](CMakeLists.txt).
 
 To compile the program do: \
 **`$ cmake .`** \
-**`$ make -j 4`**. 
+**`$ make -j 4`**
 
 To run the program do: \
-**`$ ./WaterSim`**.
+**`$ ./WaterSim`**
