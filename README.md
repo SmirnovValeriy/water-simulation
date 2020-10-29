@@ -32,7 +32,7 @@ I implemented more complex version of the task using OpenGL3, **shaders** (besid
 
 ### Run
 
-Solution to the task is written on C++: [main.cpp](main.cpp). 
+Solution to the task is written on C++: **[main.cpp](main.cpp)**. 
 
 **Requirements:** \
 you need to have **OpenGL3**, **glfw3**, **glew**, **X11**, **SOIL**, **glm** libraries installed.
@@ -45,7 +45,7 @@ To install them do: \
 **`$ sudo apt install libx11-dev`** \
 **`$ sudo apt install libsoil-dev`**
 
-For more information about libraries used: [CMakeLists.txt](CMakeLists.txt).
+For more information about libraries used: **[CMakeLists.txt](CMakeLists.txt)**.
 
 To compile the program do: \
 **`$ cmake .`** \
