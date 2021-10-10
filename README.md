@@ -1,7 +1,7 @@
 ## Water Simulation
 
 ### Water simulation task requirements
-During a Computer Graphics course students of the Computational Mathematics and Cybernetics Faculty of Moscow State University are offered to solve a task on water simulation algorithm create a scene using the algorithm.
+During the Computer Graphics course students of the CMC Faculty of Lomonosov MSU are offered to solve a task on water simulation algorithm and create a scene using the algorithm.
 
 Obligatory requiremnts are as following:
 1. using at least 3 different objects (pool walls and bottom are 2 different objects);
